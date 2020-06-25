@@ -10,7 +10,6 @@
 - has_many :groups, through: :group_user
 - has_many :group_user
 
-
 ## messagesテーブル
 |column|Type|Option|
 |------|----|------|
@@ -20,7 +19,6 @@
 ### Association
 - belong_to :user
 - belong_to :group
-- has_many : images
 
 ## groupsテーブル
 |column|Type|Option|
