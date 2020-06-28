@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  display: flex;
+}
+
+.Side-bar{
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+  &__user-name{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    &__top-items{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &__name{
+      margin-left: 20px;
+      font-size: 16px;
+      color: #ffffff;
+      &__icons{
+      }
+      }
+    }
+  }
+  &__group_list{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    &__new{
+      height: 65px;
+      &__name{
+        padding: 20px 20px 5px 20px;
+        font-size: 15px ;
+        font-weight: bold;
+        color: #ffffff;
+        }
+      &__message{
+        padding: 0px 20px 40px 20px;
+        font-size: 11px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.fas{
+  color: white;
+  padding: 0px 20px 0px 5px;
+}
+  
+.far{
+  color: white;
+}
+
+
+.Chat-main{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  &__group_info{
+    height: 100px;
+    background-color: #ffffff;
+    border-bottom: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    &__test{
+      padding: 35px 0px 15px 40px;
+      color: #333333;
+      &__member-masa{
+      padding-left: 40p;
+      font-size: 12px;
+      color: #999999;
+      }
+    }
+    &__content{
+      margin: 28px 60px 32px 20px;
+      color: #38aef0;
+      border: 1px solid #38aef0 ;
+      padding: 0 20px;
+      .edit{
+        color: #38aef0;
+         font-size: 16px;
+         margin: 0 auto;
+         text-decoration: none;
+         height: 40px;
+         line-height: 40px;
+      }
+    }
+  }
+  &__message_list{
+    height: calc(100vh - 190px);
+    background-color:#fafafa;
+    padding-left: 40px;
+    &__member{
+      padding-top: 35px;
+      display: flex;
+      font-size: 16px;
+      color: #333333;
+      &__daytime{
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+    &__title{
+      margin-top: 12px;
+      color: #434a54;
+      font-size: 14px;
+    }
+    &__text{
+      margin-top: 46px;
+      display: flex;
+      height: 90px;
+      background-color: #d2d2d2;
+      &__member{
+        color: #333333;
+        font-size: 16px;
+      }
+      &__daytime{
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+  }
+  &__message-form{
+    height: 90px;
+    background-color: #d2d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__contents{
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+        .Form__inputText{
+          display: flex;
+          height: 50px;
+          width: 100%;
+          padding: 0 10px;
+          margin: 20px 15px 20px 40px;
+          border-style: none;
+        }
+        .input-box__image{
+        }
+        .fa fa-image{
+          position: absolute;
+          top: 30px;
+          right: 30px;
+          }
+          .file{
+              display: none;
+          }
+        }    
+    &__send{
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      margin-right: 40px;
+      padding: 0px 30px;
+      background-color: #38aef0;
+      color: #ffffff;
+      font-size: 16px;
+      } 
+    }
+}
