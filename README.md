@@ -39,4 +39,6 @@
 - belongs_to :user
 - belongs_to :group
 
+# README
+## how to use GitHub Desktop
 
