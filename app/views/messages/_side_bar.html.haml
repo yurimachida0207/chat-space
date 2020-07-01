@@ -4,7 +4,7 @@
       .Side-bar__user-name__top-items__name
         mesa
       .Side-bar__user-name__top-items__icons
-        = link_to "#", class:"far" do
+        = link_to new_group_path do
           = icon('far', 'edit')
           %span<>
         = link_to "#", class:"fas" do
@@ -16,11 +16,11 @@
           .Group__name
             = group.name
           .Group__message
-            メッセージはまだありません
-
+          
   -# .Side-bar__group_list
   -#   .Side-bar__group_list__new
   -#     .Side-bar__group_list__new__name
   -#       techcamp
   -#     .Side-bar__group_list__new__message
   -#       まだメッセージがありません
+
