@@ -10,19 +10,8 @@
       .Edit
         = link_to "edit", edit_group_path(@group), class: "edit" 
 
-  -# .Chat-main__message_list
-  -#   .Chat-main__message_list__member
-  -#     masa 
-  -#     .Chat-main__message_list__member__daytime
-  -#       2019/11/20(wed) 17:43:01
-  -#   .Chat-main__message_list__title
-  -#     おはよう！
-  -#   .Chat-main__message_list__member
-  -#     masa 
-  -#     .Chat-main__message_list__member__daytime
-  -#       2019/11/20(wed) 17:43:01
-  -#   .Chat-main__message_list__title
-  -#     今日は夜から雨
+  .Chat-main__message_list
+    = render @messages
   .Chat-main__message-form
     = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
       .Chat-main__message-form__wrapper

@@ -1,9 +1,10 @@
 class MessagesController < ApplicationController
+  before_action :set_group
+  
   def index
     @message = Message.new
     @messages = @group.messages.includes(:user)#グループに所属しているユーザーを持ってくる
     @users = @group.users 
-    
   end
 
   def create
