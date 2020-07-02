@@ -31,16 +31,14 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     .Group{
-      .group{
+      &__name{
         text-decoration: none;
         padding: 20px 20px 5px 20px;
         font-size: 15px ;
         font-weight: bold;
         color: #ffffff;
         }
-      }
-    .Message{
-      .message{
+      &__message{
         text-decoration: none;
         padding: 0px 20px 40px 20px;
         font-size: 11px;
