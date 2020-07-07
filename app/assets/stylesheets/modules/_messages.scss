@@ -90,6 +90,7 @@
   &__message_list{
     height: calc(100vh - 190px);
     padding-left: 40px;
+    overflow: scroll;
     &__member{
       padding-top: 35px;
       display: flex;
