@@ -1,12 +1,13 @@
 .Chat-main
-  .Chat-main__group_info
-    .Chat-main__group_info__left-header
+  .Chat-main__group
+    .Chat-main__group__left-header
       .group-name
         = @group.name
       .member
+        Member
         - @group.users.each do |user| 
           = user.name
-    .Chat-main__group_info__right-header
+    .Chat-main__group__right-header
       .Edit
         = link_to "edit", edit_group_path(@group), class: "edit" 
 
